@@ -61,7 +61,7 @@ If you're using `postcss-import` (or a tool that uses it under the hood, such as
 If you'd like to customize your Tailwind installation, you can generate a config file for your project using the Tailwind CLI utility included when you install the `tailwindcss` npm package:
 
 ```bash
-npx tailwind init
+npx tailwindcss init
 ```
 
 This will create a minimal `tailwind.config.js` file at the root of your project:
@@ -75,7 +75,7 @@ module.exports = {
 }
 ```
 
-Learn more about configuration Tailwind in the [configuration documentation](/docs/configuration).
+Learn more about configuring Tailwind in the [configuration documentation](/docs/configuration).
 
 <div class="heading mt-0">
   <h2 class="flex markdown">
@@ -89,10 +89,10 @@ Learn more about configuration Tailwind in the [configuration documentation](/do
 For simple projects or just giving Tailwind a spin, you can use the Tailwind CLI tool to process your CSS:
 
 ```bash
-npx tailwind build styles.css -o output.css
+npx tailwindcss build styles.css -o output.css
 ```
 
-Use the `npx tailwind help build` command to learn more about the various CLI options.
+Use the `npx tailwindcss help build` command to learn more about the various CLI options.
 
 ### Using Tailwind with PostCSS
 
@@ -307,7 +307,7 @@ module.exports = function(defaults) {
 
 ## Using Tailwind via CDN
 
-Before using the CDN build please note, many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
+Before using the CDN build, please note that many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
 
 <ul class="list-none pl-0">
   <li class="flex items-center">

@@ -18,17 +18,22 @@ features:
     ],
     [
       '.rounded-sm',
-      'border-radius: .125rem;',
+      'border-radius: 0.125rem;',
       "Apply a small border radius to all corners of an element.",
     ],
     [
       '.rounded',
-      'border-radius: .25rem;',
+      'border-radius: 0.25rem;',
       "Apply the default border radius to all corners of an element.",
     ],
     [
+      '.rounded-md',
+      'border-radius: 0.375rem;',
+      "Apply a medium border radius to all corners of an element.",
+    ],
+    [
       '.rounded-lg',
-      'border-radius: .5rem;',
+      'border-radius: 0.5rem;',
       "Apply a large border radius to all corners of an element.",
     ],
     [
@@ -58,62 +63,82 @@ features:
     ],
     [
       '.rounded-t-sm',
-      "border-top-left-radius: .125rem;\nborder-top-right-radius: .125rem;",
+      "border-top-left-radius: 0.125rem;\nborder-top-right-radius: 0.125rem;",
       "Apply a small border radius to the top corners of an element.",
     ],
     [
       '.rounded-r-sm',
-      "border-top-right-radius: .125rem;\nborder-bottom-right-radius: .125rem;",
+      "border-top-right-radius: 0.125rem;\nborder-bottom-right-radius: 0.125rem;",
       "Apply a small border radius to the right corners of an element.",
     ],
     [
       '.rounded-b-sm',
-      "border-bottom-right-radius: .125rem;\nborder-bottom-left-radius: .125rem;",
+      "border-bottom-right-radius: 0.125rem;\nborder-bottom-left-radius: 0.125rem;",
       "Apply a small border radius to the bottom corners of an element.",
     ],
     [
       '.rounded-l-sm',
-      "border-top-left-radius: .125rem;\nborder-bottom-left-radius: .125rem;",
+      "border-top-left-radius: 0.125rem;\nborder-bottom-left-radius: 0.125rem;",
       "Apply a small border radius to the left corners of an element.",
     ],
     [
       '.rounded-t',
-      "border-top-left-radius: .25rem;\nborder-top-right-radius: .25rem;",
+      "border-top-left-radius: 0.25rem;\nborder-top-right-radius: 0.25rem;",
       "Apply the default border radius to the top corners of an element.",
     ],
     [
       '.rounded-r',
-      "border-top-right-radius: .25rem;\nborder-bottom-right-radius: .25rem;",
+      "border-top-right-radius: 0.25rem;\nborder-bottom-right-radius: 0.25rem;",
       "Apply the default border radius to the right corners of an element.",
     ],
     [
       '.rounded-b',
-      "border-bottom-right-radius: .25rem;\nborder-bottom-left-radius: .25rem;",
+      "border-bottom-right-radius: 0.25rem;\nborder-bottom-left-radius: 0.25rem;",
       "Apply the default border radius to the bottom corners of an element.",
     ],
     [
       '.rounded-l',
-      "border-top-left-radius: .25rem;\nborder-bottom-left-radius: .25rem;",
+      "border-top-left-radius: 0.25rem;\nborder-bottom-left-radius: 0.25rem;",
       "Apply the default border radius to the left corners of an element.",
     ],
     [
+      '.rounded-t-md',
+      "border-top-left-radius: 0.375rem;\nborder-top-right-radius: 0.375rem;",
+      "Apply a medium border radius to the top corners of an element.",
+    ],
+    [
+      '.rounded-r-md',
+      "border-top-right-radius: 0.375rem;\nborder-bottom-right-radius: 0.375rem;",
+      "Apply a medium border radius to the right corners of an element.",
+    ],
+    [
+      '.rounded-b-md',
+      "border-bottom-right-radius: 0.375rem;\nborder-bottom-left-radius: 0.375rem;",
+      "Apply a medium border radius to the bottom corners of an element.",
+    ],
+    [
+      '.rounded-l-md',
+      "border-top-left-radius: 0.375rem;\nborder-bottom-left-radius: 0.375rem;",
+      "Apply a medium border radius to the left corners of an element.",
+    ],
+    [
       '.rounded-t-lg',
-      "border-top-left-radius: .5rem;\nborder-top-right-radius: .5rem;",
+      "border-top-left-radius: 0.5rem;\nborder-top-right-radius: 0.5rem;",
       "Apply a large border radius to the top corners of an element.",
     ],
     [
       '.rounded-r-lg',
-      "border-top-right-radius: .5rem;\nborder-bottom-right-radius: .5rem;",
+      "border-top-right-radius: 0.5rem;\nborder-bottom-right-radius: 0.5rem;",
       "Apply a large border radius to the right corners of an element.",
     ],
     [
       '.rounded-b-lg',
-      "border-bottom-right-radius: .5rem;\nborder-bottom-left-radius: .5rem;",
+      "border-bottom-right-radius: 0.5rem;\nborder-bottom-left-radius: 0.5rem;",
       "Apply a large border radius to the bottom corners of an element.",
     ],
     [
       '.rounded-l-lg',
-      "border-top-left-radius: .5rem;\nborder-bottom-left-radius: .5rem;",
+      "border-top-left-radius: 0.5rem;\nborder-bottom-left-radius: 0.5rem;",
       "Apply a large border radius to the left corners of an element.",
     ],
     [
@@ -158,62 +183,82 @@ features:
     ],
     [
       '.rounded-tl-sm',
-      'border-top-left-radius: .125rem;',
+      'border-top-left-radius: 0.125rem;',
       "Apply a small border radius to the top left corner of an element.",
     ],
     [
       '.rounded-tr-sm',
-      'border-top-right-radius: .125rem;',
+      'border-top-right-radius: 0.125rem;',
       "Apply a small border radius to the top right corner of an element.",
     ],
     [
       '.rounded-br-sm',
-      'border-bottom-right-radius: .125rem;',
+      'border-bottom-right-radius: 0.125rem;',
       "Apply a small border radius to the bottom right corner of an element.",
     ],
     [
       '.rounded-bl-sm',
-      'border-bottom-left-radius: .125rem;',
+      'border-bottom-left-radius: 0.125rem;',
       "Apply a small border radius to the bottom left corner of an element.",
     ],
     [
       '.rounded-tl',
-      'border-top-left-radius: .25rem;',
+      'border-top-left-radius: 0.25rem;',
       "Apply the default border radius to the top left corner of an element.",
     ],
     [
       '.rounded-tr',
-      'border-top-right-radius: .25rem;',
+      'border-top-right-radius: 0.25rem;',
       "Apply the default border radius to the top right corner of an element.",
     ],
     [
       '.rounded-br',
-      'border-bottom-right-radius: .25rem;',
+      'border-bottom-right-radius: 0.25rem;',
       "Apply the default border radius to the bottom right corner of an element.",
     ],
     [
       '.rounded-bl',
-      'border-bottom-left-radius: .25rem;',
+      'border-bottom-left-radius: 0.25rem;',
       "Apply the default border radius to the bottom left corner of an element.",
     ],
     [
+      '.rounded-tl-md',
+      'border-top-left-radius: 0.375rem;',
+      "Apply a medium border radius to the top left corner of an element.",
+    ],
+    [
+      '.rounded-tr-md',
+      'border-top-right-radius: 0.375rem;',
+      "Apply a medium border radius to the top right corner of an element.",
+    ],
+    [
+      '.rounded-br-md',
+      'border-bottom-right-radius: 0.375rem;',
+      "Apply a medium border radius to the bottom right corner of an element.",
+    ],
+    [
+      '.rounded-bl-md',
+      'border-bottom-left-radius: 0.375rem;',
+      "Apply a medium border radius to the bottom left corner of an element.",
+    ],
+    [
       '.rounded-tl-lg',
-      'border-top-left-radius: .5rem;',
+      'border-top-left-radius: 0.5rem;',
       "Apply a large border radius to the top left corner of an element.",
     ],
     [
       '.rounded-tr-lg',
-      'border-top-right-radius: .5rem;',
+      'border-top-right-radius: 0.5rem;',
       "Apply a large border radius to the top right corner of an element.",
     ],
     [
       '.rounded-br-lg',
-      'border-bottom-right-radius: .5rem;',
+      'border-bottom-right-radius: 0.5rem;',
       "Apply a large border radius to the bottom right corner of an element.",
     ],
     [
       '.rounded-bl-lg',
-      'border-bottom-left-radius: .5rem;',
+      'border-bottom-left-radius: 0.5rem;',
       "Apply a large border radius to the bottom left corner of an element.",
     ],
     [
@@ -246,10 +291,12 @@ Use the `.rounded-sm`, `.rounded`, or `.rounded-lg` utilities to apply different
 @component('_partials.code-sample', ['class' => 'flex justify-around text-sm'])
 <div class="bg-gray-400 mr-3 p-4 rounded-sm">.rounded-sm</div>
 <div class="bg-gray-400 mr-3 p-4 rounded">.rounded</div>
+<div class="bg-gray-400 mr-3 p-4 rounded-md">.rounded-md</div>
 <div class="bg-gray-400 p-4 rounded-lg">.rounded-lg</div>
 @slot('code')
 <div class="rounded-sm"></div>
 <div class="rounded"></div>
+<div class="rounded-md"></div>
 <div class="rounded-lg"></div>
 @endslot
 @endcomponent
@@ -362,10 +409,11 @@ By default Tailwind provides five border radius size utilities. You can change, 
 
 @component('_partials.customized-config', ['key' => 'theme.borderRadius'])
   'none': '0',
-- 'sm': '.125rem',
-- default: '.25rem',
+- 'sm': '0.125rem',
+- default: '0.25rem',
 + default: '4px',
-- 'lg': '.5rem',
+- 'md': '0.375rem',
+- 'lg': '0.5rem',
 - 'full': '9999px',
 + 'large': '12px',
 @endcomponent
@@ -379,4 +427,3 @@ By default Tailwind provides five border radius size utilities. You can change, 
         'responsive',
     ],
 ])
-

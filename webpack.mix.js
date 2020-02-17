@@ -10,8 +10,8 @@ fs.writeFileSync('./tailwind.json', JSON.stringify(resolveConfig([config])))
 mix.webpackConfig({
   plugins: [
     build.jigsaw,
-    build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
-  ]
+    build.watch(['navigation.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
+  ],
 })
 mix.setPublicPath('source/assets/build')
 
@@ -22,7 +22,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     './source/**/*.vue',
     './source/**/*.js',
   ],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/\?\(\)]+/g) || []
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/\?\(\)]+/g) || [],
 })
 
 mix
@@ -33,10 +33,8 @@ mix
   .options({
     postCss: [
       tailwind('tailwind.config.js'),
-      ...process.env.NODE_ENV === 'production'
-        ? [purgecss]
-        : []
+      ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
     ],
-    cssNano: { discardComments: false, mergeRules: false }
+    cssNano: { discardComments: false, mergeRules: false },
   })
   .version()

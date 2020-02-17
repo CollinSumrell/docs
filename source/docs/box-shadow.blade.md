@@ -21,30 +21,39 @@ features:
 
 ## Outer shadow
 
-Use the `.shadow`, `.shadow-md`, `.shadow-lg`, `.shadow-xl`, or `.shadow-2xl` utilities to apply different sized outer box shadows to an element.
+Use the `.shadow-sm`, `.shadow`, `.shadow-md`, `.shadow-lg`, `.shadow-xl`, or `.shadow-2xl` utilities to apply different sized outer box shadows to an element.
 
-@component('_partials.code-sample', ['class' => 'bg-gray-200 flex justify-around items-center text-sm py-8'])
+@component('_partials.code-sample', ['class' => 'bg-gray-100 lg:flex justify-around items-center text-sm py-8'])
 <div class="text-center px-2">
+  <div class="mb-1 text-xs text-gray-600">xs</div>
+  <div class="mx-auto h-6 w-6 text-xs bg-white rounded shadow-xs"></div>
+</div>
+<div class="mt-6 lg:mt-0 text-center px-2">
+  <div class="mb-1 text-xs text-gray-600">sm</div>
+  <div class="mx-auto h-8 w-8 text-xs bg-white rounded shadow-sm"></div>
+</div>
+<div class="mt-6 lg:mt-0 text-center px-2">
   <div class="mb-1 text-xs text-gray-600">base</div>
-  <div class="h-8 w-8 text-xs bg-white rounded p-4 shadow"></div>
+  <div class="mx-auto h-10 w-10 text-xs bg-white rounded shadow"></div>
 </div>
-<div class="text-center px-2">
+<div class="mt-6 lg:mt-0 text-center px-2">
   <div class="mb-1 text-xs text-gray-600">md</div>
-  <div class="h-10 w-10 text-xs bg-white rounded p-4 shadow-md"></div>
+  <div class="mx-auto h-12 w-12 text-xs bg-white rounded shadow-md"></div>
 </div>
-<div class="text-center px-2">
+<div class="mt-6 lg:mt-0 text-center px-2">
   <div class="mb-1 text-xs text-gray-600">lg</div>
-  <div class="h-12 w-12 text-xs bg-white rounded p-4 shadow-lg"></div>
+  <div class="mx-auto h-16 w-16 text-xs bg-white rounded shadow-md"></div>
 </div>
-<div class="text-center px-2">
+<div class="mt-6 lg:mt-0 text-center px-2">
   <div class="mb-1 text-xs text-gray-600">xl</div>
-  <div class="h-16 w-16 text-xs bg-white rounded p-4 shadow-xl"></div>
+  <div class="mx-auto h-20 w-20 text-xs bg-white rounded shadow-xl"></div>
 </div>
-<div class="text-center px-2">
+<div class="mt-6 lg:mt-0 text-center px-2">
   <div class="mb-1 text-xs text-gray-600">2xl</div>
-  <div class="h-20 w-20 text-xs bg-white rounded p-4 shadow-2xl"></div>
+  <div class="mx-auto h-24 w-24 text-xs bg-white rounded shadow-2xl"></div>
 </div>
 @slot('code')
+<div class="shadow-sm"></div>
 <div class="shadow"></div>
 <div class="shadow-md"></div>
 <div class="shadow-lg"></div>
@@ -64,7 +73,7 @@ Use the `.shadow-inner` utility to apply a subtle inset box shadow to an element
 @endslot
 @endcomponent
 
-## Outline shadow
+## Focus outline shadow
 
 Use the `.shadow-outline` utility to apply a focus-ring-style shadow to an element. This can be useful when combined with `.focus:outline-none` to create a better looking focus style that follows an element's border radius.
 
@@ -132,15 +141,15 @@ By default Tailwind provides three drop shadow utilities, one inner shadow utili
 If a `default` shadow is provided, it will be used for the non-suffixed `.shadow` utility. Any other keys will be used as suffixes, for example the key `'2'` will create a corresponding `.shadow-2` utility.
 
 @component('_partials.customized-config', ['key' => 'theme.boxShadow'])
-  default: '0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)'
-  md: ' 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)'
-  lg: ' 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)'
-  xl: ' 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)'
-  2xl: '0 25px 50px -12px rgba(0, 0, 0, .25)'
-+ 3xl: '0 35px 60px -15px rgba(0, 0, 0, .3)'
-  inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)'
-- outline: '0 0 0 3px rgba(66,153,225,0.5)'
-+ focus: '0 0 0 3px rgba(66,153,225,0.5)'
+  default: '0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)',
+  md: ' 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06)',
+  lg: ' 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05)',
+  xl: ' 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04)',
+  2xl: '0 25px 50px -12px rgba(0, 0, 0, .25)',
++ 3xl: '0 35px 60px -15px rgba(0, 0, 0, .3)',
+  inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+- outline: '0 0 0 3px rgba(66,153,225,0.5)',
++ focus: '0 0 0 3px rgba(66,153,225,0.5)',
   'none': 'none',
 @endcomponent
 
