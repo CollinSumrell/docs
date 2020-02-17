@@ -41,14 +41,18 @@ features:
     ],
     [
       '.text-4xl',
-      'font-size: 2.25rem;',
+      'font-size: 2rem;',
     ],
     [
       '.text-5xl',
-      'font-size: 3rem;',
+      'font-size: 2.25rem;',
     ],
     [
       '.text-6xl',
+      'font-size: 3rem;',
+    ],
+    [
+      '.text-7xl',
       'font-size: 4rem;',
     ],
   ]
@@ -61,43 +65,47 @@ Control the font size of an element using the `.text-{size}` utilities.
 @component('_partials.code-sample')
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-xs</p>
-  <p class="text-xs truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-xs text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-sm</p>
-  <p class="text-sm truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-base</p>
-  <p class="text-base truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-base text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-lg</p>
-  <p class="text-lg truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-lg text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-xl</p>
-  <p class="text-xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-2xl</p>
-  <p class="text-2xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-2xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-3xl</p>
-  <p class="text-3xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-3xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
   <p class="text-sm text-gray-600">.text-4xl</p>
-  <p class="text-4xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-gray-800 truncate" style="font-size: 2rem">The quick brown fox jumped over the lazy dog.</p>
 </div>
-<div>
+<div class="mb-6">
   <p class="text-sm text-gray-600">.text-5xl</p>
-  <p class="text-5xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-4xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div>
   <p class="text-sm text-gray-600">.text-6xl</p>
-  <p class="text-6xl truncate text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-5xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
+</div>
+<div>
+  <p class="text-sm text-gray-600">.text-7xl</p>
+  <p class="text-6xl text-gray-800 truncate">The quick brown fox jumped over the lazy dog.</p>
 </div>
 @slot('code')
 <p class="text-xs ...">The quick brown fox ...</p>
@@ -110,6 +118,7 @@ Control the font size of an element using the `.text-{size}` utilities.
 <p class="text-4xl ...">The quick brown fox ...</p>
 <p class="text-5xl ...">The quick brown fox ...</p>
 <p class="text-6xl ...">The quick brown fox ...</p>
+<p class="text-7xl ...">The quick brown fox ...</p>
 @endslot
 @endcomponent
 
@@ -144,7 +153,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 ### Font Sizes
 
-By default Tailwind provides 10 `font-size` utilities. You change, add, or remove these by editing the `theme.fontSize` section of your Tailwind config.
+Our Tailwind config uses 11 `font-size` utilities. You change, add, or remove these by editing the `theme.fontSize` section of your Tailwind config.
 
 @component('_partials.customized-config', ['key' => 'theme.fontSize'])
 - 'xs': '.75rem',
@@ -155,10 +164,10 @@ By default Tailwind provides 10 `font-size` utilities. You change, add, or remov
   'xl': '1.25rem',
   '2xl': '1.5rem',
 - '3xl': '1.875rem',
-- '4xl': '2.25rem',
-  '5xl': '3rem',
-  '6xl': '4rem',
-+ '7xl': '5rem',
+- '4xl': '2rem',
+  '5xl': '2.25rem',
+  '6xl': '3rem',
+  '7xl': '4rem',
 @endcomponent
 
 @include('_partials.variants-and-disabling', [

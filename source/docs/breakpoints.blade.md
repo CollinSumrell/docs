@@ -16,6 +16,9 @@ The default breakpoints are inspired by common device resolutions:
 module.exports = {
   theme: {
     screens: {
+      'xs': '448px',
+      // => @media (min-width: 448px) { ... }
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
